@@ -1,0 +1,36 @@
+.ant-row{
+  flex-grow: 1;
+}
+
+.login-background{
+  min-height: 100vh;
+  min-height: 100vh;
+  background-color: #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title{
+  color: rgba(0,0,0, .25);
+  margin-bottom: 0;
+}
+
+.form-section {
+  background-color: #FFFFFF;
+  text-align: center;
+  color: rgba(0,0,0, .25);
+  padding: 50px 20px 10px 20px;
+  margin: auto;
+  /* max-height: 381px; */
+  max-width: 340px;
+}
+
+.form-section form{
+  margin-top: 60px;
+}
+
+.login-form-button{
+  margin-top: 60px;
+  width: 100%;
+}
