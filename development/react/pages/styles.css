@@ -61,3 +61,17 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.login-error-message {
+  color: red;
+  margin: 0;
+}
+
+.data-table {
+  margin-top: 20px;
+}
+
+.logout-icon {
+  font-size: 20px;
+  margin-left: 20px;
+}

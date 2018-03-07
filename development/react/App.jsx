@@ -9,9 +9,8 @@ class App extends Component {
 
       <HashRouter>
         <div>
-          <Route exact path = "/" component = { Dashboard } />
+          <Route exact path = "/" component = { Login } />
           <Route exact path = "/dashboard" component = { Dashboard } />
-          <Route exact path = "/login" component = { Login } />
         </div>
       </HashRouter>
     )
