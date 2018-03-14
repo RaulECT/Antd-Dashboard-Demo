@@ -52,22 +52,22 @@ class Login extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     const errorMsg = this.state.wrongCredentials ? <Alert message="User or password incorrect, try again." type="error" showIcon />: ''
-    
+    console.log(this.props)
     return(
       <div className="login-background">
 
         <Row>
-          <Col span={12} offset={6}>
+          <Col span={12} offset={6} xs={{span: 24, offset:0}}>
             <div className="form-section">
-              <h1 className="login-title"><b>Admin</b>ANT</h1>
-              <p>Sign In to start your session</p>
+              <h1 className="login-title">Dashboard Admin</h1>
+              <p className="login-subtitle">Sign In to start your session</p>
 
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                   {getFieldDecorator('userName', {
                     rules: [{ required: true, message: 'Please input your Email!' }],
                   })(
-                    <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email" />
+                    <Input size="large" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email" />
                   )}
                 </FormItem>
 
@@ -75,14 +75,14 @@ class Login extends Component {
                   {getFieldDecorator('password', {
                     rules: [{ required: true, message: 'Please input your Password!' }],
                   })(
-                    <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
+                    <Input size="large" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
                   )}
                 </FormItem>
                 
                 {errorMsg}
 
                 <FormItem>
-                  <Button type="primary" htmlType="submit" className="login-form-button">
+                  <Button size="large" type="primary" htmlType="submit" className="login-form-button">
                     Log in
                   </Button>
                 </FormItem>
